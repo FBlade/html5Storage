@@ -1,6 +1,6 @@
 # html5Storage
 
-![675 KB json data Benchmark](https://github.com/FBlade/html5Storage/issues/1)
+![Benchmark 675 KB json data](https://github.com/FBlade/html5Storage/issues/1)
 
 ## Usage
 
