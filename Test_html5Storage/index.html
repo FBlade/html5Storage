@@ -1,0 +1,53 @@
+﻿<!-- Json Dummy File: https://www.json-generator.com /-->
+<!-- Storage Value Size: https://www.sitepoint.com/html5-local-storage-revisited/ -->
+<!-- jsLog: https://github.com/FBlade/console.logger.js -->
+<!-- html5Storage: https://github.com/FBlade/html5Storage -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kamae</title>
+    </head>
+    <body>
+        <div id="cont"></div>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type='text/javascript' src='html5storage.min.js'></script>
+        <script type='text/javascript' src='jsLog.min.js'></script>
+        <script>
+            var $c = $('#cont');
+            //var o = [{name: 'GM', email: 'fblade.pt@gmail.com', t : [10, 20, 30]}];
+            var o = []; //public
+            jsLog.init(); //remove
+
+            for (i = 0; i < 10 ; i++) {
+                getJson();
+              }
+
+            function getJson() {
+                let now = Date.now();
+                $.ajax({
+                    url: 'generated500.json?a='+now,
+                    type: 'GET',
+                    dataType: "json",
+                    async: true,
+                    success: exec
+                });
+            }
+
+            function exec(d) {
+                //o = d; public
+                let ox = d; //local
+                //jsLog.log('Items: ' + ox.length);
+                jsLog.log('--------------------------------------');
+                jsLog.time('setItem (Write localStorage)');
+                $.localStorage.setItem('t', JSON.stringify(ox));
+                jsLog.timeEnd('setItem (Write localStorage)');//tempo de escrita
+                jsLog.time('getItem (Read localStorage)');
+                let c= $.localStorage.getItem('t')
+                jsLog.timeEnd('getItem (Read localStorage)'); //tempo de leitura 
+                //console.log( $.parseJSON($.localStorage.getItem('t')));
+                //$c.append('<p>' + $.localStorage.getItem('t') + '<p>');
+            }
+        </script>
+    </body>
+</html>
