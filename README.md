@@ -3,7 +3,7 @@
 
 ## Usage
 
-###Create or update Key-Value pair:
+### Create or update Key-Value pair:
 
 Local Storage
 
@@ -13,7 +13,7 @@ Session Storage
 
     $.sessionStorage.setItem('key_name', 'Key Value');
 
-###Get value by key:
+### Get value by key:
 
 Local Storage
 
@@ -23,7 +23,7 @@ Session Storage
 
     $.sessionStorage.getItem('key_name');
 
-###Remove Key-Value pair:
+### Remove Key-Value pair:
 
 Local Storage
 
@@ -33,7 +33,7 @@ Session Storage
 
     $.sessionStorage.removeItem('key_name');
 
-###Remove all Key-Value pairs:
+### Remove all Key-Value pairs:
 
 Local Storage
 
