@@ -1,5 +1,5 @@
 {
-  "name": "https://github.com/FBlade/html5Storage",
+  "name": "html5Storage",
   "title": "Html5 Storage Plugin",
   "description": "jQuery Plugin for Local Storage or Session Storage.",
   "version": "1.0",
@@ -24,3 +24,4 @@
   ],
   "keywords": [ "html5", "storage", "local storage", "session storage", "plugin" ]
 }
+np
