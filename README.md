@@ -1,6 +1,7 @@
 # html5Storage
+A light jQuery Plugin to use Local Storage or Session Storage (Cookies for backward compatibility.)
 
-![Benchmark 675 KB json data](https://github.com/FBlade/html5Storage/issues/1)
+https://github.com/FBlade/html5Storage/issues/1
 
 ## Usage
 
@@ -43,3 +44,29 @@ Local Storage
 Session Storage
 
     $.sessionStorage.clear();
+
+
+# Configuration
+
+### Local Storage
+
+    $.localStorage.settings = {
+        cookiePrefix : 'html5fallback:localStorage:', // Prefix for the Local Storage substitution cookies
+        cookieOptions : {
+            path : '/', // Path for the cookie
+            domain : document.domain, // Domain for the cookie
+            expires: 365 // Days left for cookie expiring
+        }
+    };
+
+
+### Session Storage
+
+    $.sessionStorage.settings = {
+        cookiePrefix : 'html5fallback:sessionStorage:', / Prefix for the Session Storage substitution cookies
+        cookieOptions : {
+            path : '/', // Path for the cookie
+            domain : document.domain, // Domain for the cookie
+            expires: undefined // Days left for cookie expiring (by default expires with the session)
+        }
+    };
