@@ -1,6 +1,13 @@
+[![](https://data.jsdelivr.com/v1/package/npm/jquery-html5storage/badge)](https://www.jsdelivr.com/package/npm/jquery-html5storage)
+
 # html5Storage
 A light jQuery Plugin to use Local Storage or Session Storage (Cookies for backward compatibility.)
 
+
+npm: https://www.npmjs.com/package/jquery-html5storage
+
+
+### Benchmark
 https://github.com/FBlade/html5Storage/issues/1
 
 ## Usage
