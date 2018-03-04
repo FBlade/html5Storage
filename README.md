@@ -6,6 +6,8 @@ A light jQuery Plugin to use Local Storage or Session Storage (Cookies for backw
 
 npm: https://www.npmjs.com/package/jquery-html5storage
 
+jsDelivr: https://cdn.jsdelivr.net/npm/jquery-html5storage/html5storage.min.js
+
 
 ### Benchmark
 https://github.com/FBlade/html5Storage/issues/1
